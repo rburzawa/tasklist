@@ -7,4 +7,11 @@ public class Location {
     private String street;
     private String streetNo;
 
+    public Location(int id, String city, String postalCode, String street, String streetNo) {
+        this.id = id;
+        this.city = city;
+        this.postalCode = postalCode;
+        this.street = street;
+        this.streetNo = streetNo;
+    }
 }
