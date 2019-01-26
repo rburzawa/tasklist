@@ -55,11 +55,12 @@ public class Task {
             return task;
         }
 
-        public TaskBuilder() {
-
+        public TaskBuilder(int id, String title) {
+            this.id = id;
+            this.title = title;
         }
 
-        public TaskBuilder withId(int id) {
+        /*public TaskBuilder withId(int id) {
             this.id = id;
             return this;
         }
@@ -67,7 +68,7 @@ public class Task {
         public TaskBuilder withTitle(String title) {
             this.title = title;
             return this;
-        }
+        }*/
 
         public TaskBuilder withDescription(String description) {
             this.description = description;
@@ -123,7 +124,6 @@ public class Task {
             this.assignedUserExternalId = assignedUserExternalId;
             return this;
         }
-
 
         public int getId() {
             return id;
